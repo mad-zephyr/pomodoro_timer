@@ -1,0 +1,55 @@
+.main
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 410px
+    height: 410px
+    border-radius: 100%
+    padding: 22px
+    background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%)
+    box-shadow: 50px 50px 100px 0 #121530, -50px -50px 100px 0 #272c5a
+    margin-bottom: 64px
+    text-align: center
+
+.inner
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+    border-radius: 100%
+    background: #161932
+
+.wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+    z-index: 2
+
+.timer
+    font-size: 100px
+    line-height: 1.2
+
+.cycle
+    font-size: 16px
+    letter-spacing: 0.94em
+    margin-right: -0.94em
+    z-index: 2
+    cursor: pointer
+
+.restart
+    font-size: 16px
+    letter-spacing: 0.94em
+    margin-right: -0.94em
+    z-index: 2
+    cursor: pointer
+    transition: 0.2s all ease-in
+
+    &:hover
+        color: var(--color-red)
+
+.progress
+    position: absolute
+    rotate: -90deg
+    z-index: 0

@@ -1,0 +1,71 @@
+.main
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: var(--color-white)
+    border-radius: 25px
+    max-width: 540px
+    flex-grow: 1
+
+    hr
+        margin: 12px 0 24px
+        background: #161932
+        opacity: 0.2
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: var(--font-family)
+    font-weight: 700
+    font-size: 28px
+    color: #161932
+    padding: 40px 34px 30px
+    width: 100%
+    border-bottom: 1px solid #E3E1E1
+
+.content
+    display: flex
+    flex-direction: column
+    width: 100%
+    padding: 28px 40px
+
+.row
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    width: 100%
+    font-family: var(--font-family)
+    font-weight: 700
+    font-size: 13px
+    letter-spacing: 0.38em
+    color: #161932
+    margin-bottom: 12px
+
+.submit
+    position: absolute
+    bottom: 0
+    transform: translateY(50%)
+
+@media only screen and (max-width: 480px)
+    .main
+        margin: 24px 24px auto
+
+    .header
+        padding: 24px
+
+    .content
+        padding: 24px 24px 54px
+
+    .row
+        flex-direction: column
+        row-gap: 12px
+        margin-bottom: 18px
+
+    .input
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        width: 100%

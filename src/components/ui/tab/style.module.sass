@@ -1,0 +1,37 @@
+.main
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 31px
+    width: 373px
+    height: 63px
+    background: var(--color-dark-blue)
+    column-gap: 8px
+    z-index: 1
+
+    padding: 8px
+
+.tab
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 48px
+    background: none
+    padding: 14px 0
+    border-radius: 26px
+    font-weight: 700
+    font-size: 13px
+    color: rgba(#D7E0FF, 0.5)
+    transition: 0.2s all ease-in-out
+    cursor: pointer
+    flex-grow: 1
+
+    &:hover
+        color: var(--color-white-shade-one)
+
+.active
+    // background: var(--color-red)
+    color: var(--color-dark-blue)
+
+    &:hover
+        color: var(--color-dark-blue)

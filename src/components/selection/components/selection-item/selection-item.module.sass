@@ -1,0 +1,43 @@
+.main
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background: var(--color-white-shade-two)
+    font-family: var(--font-family)
+    cursor: pointer
+    color: var(--color-blue)
+    letter-spacing: 0px
+
+    &:hover
+        &::after
+            content: ""
+            position: absolute
+            width: 48px
+            height: 48px
+            border: 1px solid var(--color-white-shade-two)
+            border-radius: 50%
+
+.cheked
+    background: var(--color-blue)
+    color: var(--color-white)
+
+.second_family
+    font-family: var(--second-family)!important
+    letter-spacing: 0px
+
+.third_family
+    font-family: var(--third-family)!important
+    letter-spacing: 0px
+
+.red
+    background: var(--color-red)
+
+.malibu
+    background: var(--color-malibu)
+
+.purple
+    background: var(--color-purple)

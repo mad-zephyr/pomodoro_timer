@@ -1,0 +1,32 @@
+.btn
+    display: flex
+    font-family: var(--font-family)
+    align-items: center
+    justify-content: center
+    border-radius: 26px
+    width: 140px
+    height: 53px
+    background: var(--color-red)
+    border: none
+    cursor: pointer
+    font-weight: 700
+    font-size: 16px
+    text-align: center
+    color: var(--color-white)
+    transition: 0.2s background
+
+    &:hover
+        background: #f98d8d
+
+.shrink
+    width: 36px
+    height: auto
+    aspect-ratio: 1/1
+
+.ghost
+    background: none
+    color: rgba(#D7E0FF, 0.5)
+    transition: 0.2s all ease-in
+
+    &:hover
+        color: rgba(#D7E0FF, 1)
