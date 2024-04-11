@@ -2,7 +2,7 @@ import { FC } from 'react'
 import cn from 'classnames'
 
 import { Icon } from '../icon/icon'
-import styles from './TimeController.module.sass'
+import styles from './timeController.module.sass'
 import { Input } from '../ui'
 import { TTimeController } from './timeController.props'
 
