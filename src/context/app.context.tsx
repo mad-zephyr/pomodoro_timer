@@ -51,7 +51,7 @@ type Actions = {
 const DEFAULT_TIMER = 0.1
 const DEFAULT_MIN_TIMER = 0.2
 const DEFAULT_MAX_TIMER = 0.3
-const DEFAULT_CYCLES = 2
+const DEFAULT_CYCLES = 1
 
 const DEFAULT_STYLE: TStyle = {
   font: 'font-family',
@@ -112,14 +112,14 @@ export const useAppStore = create<AppState & Actions>()(
       showSettings: false,
 
       setShowSettings: (show: boolean) =>
-        set((state) => ({
+        set(() => ({
           showSettings: show,
         })),
 
       isRunning: false,
 
       setIsRunning: (isRunning: boolean) =>
-        set((state) => ({
+        set(() => ({
           isRunning: isRunning,
         })),
     }),
